@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
+from .models import Category, Book, Product, Cart
 from .serializers import RegistrationSerializer, CategorySerializer, BookSerializer, ProductSerializer, UserSerializer, CartSerializer
 
 class ListCategory(generics.ListCreateAPIView):
